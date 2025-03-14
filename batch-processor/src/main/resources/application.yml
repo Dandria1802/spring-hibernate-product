@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/warehouse
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  
+  batch:
+    job:
+      enabled: false  # Disable job auto-execution
+    initialize-schema: always
+    table-prefix: BATCH_
+
+batch:
+  chunk-size: 1000
+  page-size: 500
+  max-threads: 4
+
+logging:
+  level:
+    org.springframework.batch: INFO
+    org.dandria.warehouse.batch: DEBUG
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true 
