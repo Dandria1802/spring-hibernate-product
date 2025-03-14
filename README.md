@@ -1,4 +1,4 @@
-# Warehouse Management System
+# spring-hibernate-product 
 
 A modern, scalable warehouse management system built with Spring Boot, featuring product tracking, inventory management, and expiration monitoring.
 
