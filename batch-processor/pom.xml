@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>org.dandria</groupId>
-        <artifactId>warehouse</artifactId>
+        <artifactId>spring-hibernate-product</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
