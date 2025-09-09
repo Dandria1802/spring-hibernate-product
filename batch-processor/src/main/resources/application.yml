@@ -17,8 +17,9 @@ spring:
   batch:
     job:
       enabled: false  # Disable job auto-execution
-    initialize-schema: always
-    table-prefix: BATCH_
+    jdbc:
+      initialize-schema: always
+      table-prefix: BATCH_
 
 batch:
   chunk-size: 1000
