@@ -21,6 +21,7 @@
         <module>control-products</module>
         <module>shopping-list</module>
         <module>stats</module>
+        <module>batch-processor</module>
     </modules>
 
     <properties>
